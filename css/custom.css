@@ -1,0 +1,140 @@
+.text-color-tertiary {
+    color:rgb(82, 234, 200);
+}
+
+.bg-primary-custom {
+    background-color: #161765;
+}
+
+.main-header h1 {
+    font-weight: bold;
+}
+
+.main-header .lead {
+    color: rgba(255, 255, 255, 0.801);
+    font-weight: bold;
+    margin-bottom: 3em;
+}
+
+.main-header .btn {
+    color: rgb(221, 221, 221);
+    border-radius: 30px;
+}
+
+.jumbotron {
+    background: rgba(89, 60, 143, 0.644);
+    background: linear-gradient(45deg, #161765d5, rgba(156, 123, 216, 0.644)), url("../images/business.jpg");
+    background-size: cover;
+    padding-top: 8em;
+    padding-bottom: 12em;
+}
+
+.skills-headline{
+    background-color: rgba(105, 90, 205, 0.192);
+    font-weight: bold;
+}
+
+.skills div {
+    padding-top: 8px;
+    padding-bottom: 5px;
+    margin-bottom: 0;
+}
+
+.skills img,
+.skills p {
+    display: inline-block;
+    margin: 0;
+}
+
+.skills img {
+    width: 20px;
+}
+
+#projects {
+    background-color: #f8faff;
+}
+
+#projects h1{
+    background-color: #f8faff;
+    margin-bottom: 1.5em;
+}
+
+.projects-container {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-card {
+    padding: 3em 2em;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.205);
+    margin-bottom: 1.5em;
+    width: 18rem;
+}
+
+.project-card:hover {
+    background-color: rgba(219, 242, 255, 0.075);
+}
+
+.project-card img {
+    width: 60px;
+}
+
+.project-card h5{
+    padding-top: 1.5em;
+}
+
+.project-card p{
+    color: #78788c;
+}
+
+hr {
+    background-color: rgb(82, 199, 234);
+    height: 2px;
+    width: 40%;
+    margin-left: 0;
+    margin-top: 1.8em;
+    margin-bottom: 1.8em;
+}
+
+#contact {
+    background-color: #edf2ff;
+    padding: 4em 0 7em;
+}
+
+.contact-container {
+    font-weight: bold;
+    color: #5774bd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+.contact-item {
+    padding: 1em;
+    width: 250px;
+    margin-left: 3em;
+    margin-right: 3em;
+    border: 2px solid rgba(0, 0, 0, 0.322);
+    border-radius: 3px;
+    margin-bottom: 3em;
+}
+
+
+/* =====================================
+ Media Queries
+===================================== */
+
+
+/* ---- 768px and larger(tablet/desktop)---- */
+
+@media(min-width:768px) {
+    
+    .projects-container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+}

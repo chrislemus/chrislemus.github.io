@@ -1,102 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta name='viewport' content="width=device-width, initial-scale=1.0">
-    <title>Chris Responsive Site</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/stylesheet.css"> 
-</head>
-<body>
-    <div class="nav-background">
-    <nav class="main-nav container clearfix">
-        <h1 class="name"><a href="#">CHRIS LEMUS</a></h1>
-        <ul class="nav">
-            <li><a href="index.html">HOME</a></li><li>
-            <a href="#portfolio">PORTFOLIO</a></li><li>
-            <a href="#skills">SKILLS</a></li><li>
-            <a href="#contact">CONTACT</a></li>
-            
-        </ul>
-    </nav>
-    </div>
-    <header class="main-header container clearfix">
-        <img src="images/responsive-layout-profile.png" alt="picture of chris">
-        <p>Hi! I'm a front-end developer who loves responsive design and css. I recently finished learning front-end web development at Treehouse and am excited to put all my skills to use!</p>
-    </header>
-    <main>
-    <div class="portfolio clearfix" id="portfolio">
-        <h2>PORTFOLIO</h2>
-        <section class="c-marketing card">
-            <img src="images/portfolio-1.png" alt="marketing-project">
-            <h3>Marketing Page</h3>
-            <p>This project shows the front page of a marketing website meant for a specific business I'm interested in.</p>
-        </section>
-        <section class="c-search card">
-            <img src="images/portfolio-2.png" alt="search-page-project"> 
-            <h3>Search Page</h3>
-            <p>This project searches thorugh a specific database to find information that the user is trying to look up.</p>
-        </section>
-        <section class="c-travel card">
-            <img src="images/portfolio-3.png" alt="travel-project">
-            <h3>Travel App</h3>
-            <p>This project compares travel times based on different transportation methods and tells you the best one.</p>
-        </section>
-        <section class="c-map card">
-            <img src="images/portfolio-4.png" alt="map-project">
-            <h3>Map of Favorite Spots</h3>
-            <p>This project uses mapping apis to plot points for my favorite spots in the city for a do-it-yourself walking tour.</p>
-        </section>
-        <section class="c-photo card">
-            <img src="images/portfolio-5.png" alt="photo-gallery-project">
-            <h3>Photo Gallery</h3>
-            <p>This project shows pictures from a recent trip to the viewer and allows the, to easily navigate through photos.</p>
-        </section>
-        <section class="c-calculator card">
-            <img src="images/portfolio-6.png" alt="calculator-project">
-            <h3>Calculator</h3>
-            <p>Someone can enter in the numbers they want, and press the big blue button and get the results.</p>
-        </section>
-    </div>
-    <section class="clearfix container skills" id="skills">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <h2>Skills</h2>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
 
-        <section class="card s-card">
-            <img src="images/video.jpg" alt="camera-filming">
-            <span>image provided by raw pixel.com</span>
-            <h3>Video</h3>
-            <p>As a creative I started exploring other platforms where I could express myself, soon after I found that creating websites was entertaining.</p>
-            <p><a target="_blank" href="https://1drv.ms/v/s!Ai2_r7JZ5KbBwRbAf68w3nNUF0JG?e=bFCUsW">click here</a> to view my latest commercial project.</p>
-        </section>
+    <title>Chris Lemus Portfolio</title>
+  </head>
+  <body >
+    <!--navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-custom">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="images/webdeveloper.png" alt="chris-portfolio"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+        
+            <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                <div class="navbar-nav ml-auto">
+                  <a class="nav-item nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-item nav-link" href="#about-me">About Me</a>
+                  <a class="nav-item nav-link" href="#projects">Projects</a>
+                  <a class="nav-item nav-link" href="#contact">Contact</a>
+                </div>
+              </div>
+        </div>
+    </nav> <!--/navigation-->
 
-        <section class="card s-card">
-            <img src="images/business.jpg" alt="business">
-            <span>image provided by raw pixel.com</span>
-            <h3>Business</h3>
-            <p>I've been been doing video since I was in high school. The art of being able to take an idea from my head and showing it to the world has always fascinated me.</p>
-            <p><a target="_blank" href="https://www.google.com/search?q=maidsnextdoor#lrd=0x89ac5987e2347cf7:0x3bf07d036950cd14,1,,,">click here</a> to view one of the businesses I've started.</p>
-        </section>
+    <!--jumbotron-->
+    <div class="jumbotron jumbotron-fluid text-white main-header text-center">
+        <div class="container mx-auto ">
+                <h1 class="display-2">Chris Lemus</h1>
+                <p class="lead">I’m an aspiring Fron End Web Developer who is in love with visual design.</p>
+                <a class="btn btn-lg bg-primary-custom " href="#about-me" role="button">Learn more <span style="color: rgb(82, 234, 200);">></span></a>
+        </div>
+    </div><!--/jumbotron-->
 
-    </section>
-    </main>
+    <!--about me-->
+    <section id="about-me" class="text-center container mt-5">
+      <div class="row">
+        <div class="col-lg-7 my-5 text-left">
+          <h1 class="mb-4">About Me</h1>
+          <p>I started out creating websites on Wix for my family business. I felt restricted after using Wix for a while, so I switched over to Wordpress and created a website using a visual builder. But after a while I felt restricted using a visual builder, which brought me to the journey of learning to code and expand my creativity!</p>
+        </div>
+        <div class="col-lg-5 ">
+          <div class="list-group skills">
+            <p class="list-group-item mb-0 skills-headline">My Skills</p>
+            <div class="list-group-item list-group-item-action">
+              <p>HTML 5</p> 
+              <img src="images/icon-html.png" alt="html-icon">
+            </div>
+            <div class="list-group-item list-group-item-action">
+              <p>CSS</p> 
+              <img src="images/icon-css.png" alt="css-icon">
+            </div>
+            <div class="list-group-item list-group-item-action">
+              <p>JavaScript</p> 
+              <img src="images/icon-javascript.png" alt="javascript-icon">
+            </div>
+            <div class="list-group-item list-group-item-action">
+              <p>Adobe Premiere</p> 
+              <img src="images/icon-adobe-premiere.png" alt="premiere-icon">
+            </div>
+            <div class="list-group-item list-group-item-action">
+              <p>Adobe After Effects</p> 
+              <img src="images/icon-adobe-aftereffects.png" alt="aftereffects-icon">
+            </div>
+            <div class="list-group-item list-group-item-action">
+              <p>Video Production</p> 
+              <img src="images/icon-camera.png" alt="camera-icon">
+            </div>
+            <div class="list-group-item list-group-item-action">
+              <p>Business Management</p> 
+              <img src="images/icon-business.png" alt="business-icon">
+            </div>
+            <div class="list-group-item list-group-item-action">
+              <p>Marketing</p> 
+              <img src="images/icon-marketing.png" alt="marketing-icon">
+            </div>
+          </div>
+        </div>
+    </section><!--/about me-->
 
-    <section class="contact" id="contact">
-        <h2>CONTACT</h2>
-        <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
-        <p>Phone <a href="tel:+1(111)555-1234">+1(111)555-1234</a></p>
-        <p>Email <a href="mailto:email@yoursite.com">email@yoursite.com</a></p>
-    </section>
+    <!--projects-->
+    <section id="projects" class="mt-5 py-5">
+      <h1 class="text-center">Projects</h1>
+      <div class="container row mx-auto projects-container">
+        <div class="card project-card">
+          <div class="card-body">
+            <img  src="images/server-icon.png" alt="play-btn" width="70px">
+            <h5 class="card-title">Employee Directory</h5>
+            <hr>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="card project-card">
+          <div class="card-body">
+            <img  src="images/WebApp-icon.png" alt="play-btn" width="70px">
+            <h5 class="card-title">WebApp Dashboard</h5>
+            <hr>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="card project-card">
+          <div class="card-body">
+            <img  src="images/Game-icon.png" alt="play-btn" width="70px">
+            <h5 class="card-title">Game Show App</h5>
+            <hr>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="card project-card">
+          <div class="card-body">
+            <img  src="images/media-search-icon.png" alt="play-btn" width="70px">
+            <h5 class="card-title">Interactive Photo Galley</h5>
+            <hr>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="card project-card">
+          <div class="card-body">
+            <img  src="images/sass-logo.png" alt="play-btn" width="70px">
+            <h5 class="card-title">Web Style Guide</h5>
+            <hr>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">LEARN MORE</a>
+          </div>
+        </div>
+        <div class="card project-card">
+          <div class="card-body">
+            <img  src="images/google-application.png" alt="play-btn" width="70px">
+            <h5 class="card-title">Online Registration Form</h5>
+            <hr>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">LEARN MORE</a>
+          </div>
+        </div>
+      </div>
+    </section><!--/projects-->
 
-    <footer class="main-footer container">
-        <h6 ><a href="index.html">CHRIS LEMUS</a></h6>
-        <ul>
-            <li><a href="index.html">HOME</a></li><li>
-            <a href="#portfolio">PORTFOLIO</a></li><li>
-            <a href="#skills">SKILLS</a></li><li>
-            <a href="#contact">CONTACT</a></li>
-        </ul>
-        <p class="to-top"><a href="index.html">BACK TO TOP</a></p>
-    </footer>
-</body>
+    <!--contact-->
+    <section id="contact" class="text-center">
+      <h1 class="mb-5">Contact</h1>
+      <div class="contact-container container">
+        <div class="contact-item">
+          <img src="images/webdeveloper.png" alt="phone-icon">
+          <p class="mb-0 mt-4">Phone:</p>
+          <p>919-995-9906</p>
+        </div>
+        <div class="contact-item">
+          <img src="images/webdeveloper.png" alt="phone-icon">
+          <p class="mb-0 mt-4">Email:</p>
+          <p>icrislemus@gmail.com</p>
+        </div>
+      </div>
+    </section><!--/contact-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
 </html>
