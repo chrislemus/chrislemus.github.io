@@ -175,14 +175,14 @@
     color: white;
 }
 
-#contact-icon {
+.contact-icon {
     height: 64px;
     width: 64px;
     border-radius: 50%;
     box-shadow: 0 0 13px rgba(26, 255, 37, 0.527);
 }
 
-#contact-icon:hover {
+.contact-icon:hover {
     transform: scale(1.2) rotate(360deg);
     transition: transform .5s ease-in-out ;
 }
